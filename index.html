@@ -363,7 +363,7 @@ function renderStudents(){
         ${cls} <span style="margin-left:auto;font-weight:400;color:var(--grey)">${sts.length} student${sts.length!==1?'s':''}</span>
       </div>`;
     sts.forEach(s=>{
-      html+=`<div class="list-card" style="border-radius:0;border-top:none"><div class="list-avatar">${s.initials||s.name[0]}</div><div style="flex:1"><div class="list-name">${s.name}</div><div class="list-sub">${s.student_code||''}</div></div><div class="list-actions"><button class="icon-btn" style="background:#DBEAFE;color:#1D4ED8;border-color:#BFDBFE" title="Manage Subjects" onclick="openSubjects('${s.id}','${s.name}','${s.class_id||''}')">📚</button><button class="icon-btn reset" onclick="resetSt('${s.id}','${s.name}')">↺</button><button class="icon-btn delete" onclick="delSt('${s.id}','${s.name}')">🗑️</button></div></div>`;
+      html+=`<div class="list-card" style="border-radius:0;border-top:none"><div class="list-avatar">${s.initials||s.name[0]}</div><div style="flex:1"><div class="list-name">${s.name}</div><div class="list-sub">${s.student_code||''}</div></div><div class="list-actions"><button class="icon-btn" style="background:#DBEAFE;color:#1D4ED8;border-color:#BFDBFE" title="Manage Subjects" onclick="openSubjects('${s.id}','${s.name}','${s.class_id||''}')">🎯</button><button class="icon-btn reset" onclick="resetSt('${s.id}','${s.name}')">↺</button><button class="icon-btn delete" onclick="delSt('${s.id}','${s.name}')">🗑️</button></div></div>`;
     });
     html+='</div>';
   });
